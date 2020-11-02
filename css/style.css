@@ -228,8 +228,8 @@ img{
     margin-left: 0.9375em;
 }
 .proximos-jogos{
-    width: 237px;
-    height: 750px;
+    width: 14.8125em;
+    height: 46.875em;
     background: linear-gradient(180deg, #232126 54.51%, rgba(255, 255, 255, 0) 100%), #000000;
     box-shadow: 10px 10px 5px #000;
     margin: auto;
@@ -254,13 +254,53 @@ img{
     color: #fff;
     display: flex;
 }
-.links-uteis ul{
+.rodape ul{
     list-style-type: none;
 }
-.links-uteis a{
+.rodape a{
     text-decoration: none;
     color: #fff;
 }
+.conteudo-rodape{
+    width: 100%;
+    display: flex;
+}
+.links-uteis{
+    margin-right: 1.875em;
+}
+.conteudo-rodape img{
+    display: flex;
+    max-width: 286px;
+    justify-content: center;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.campo-email{
+    width: 187px;
+    height: 40px;
+    color: rgba(88, 83, 83, 0.589);
+    background-color: #fff;
+    border-radius:4px;
+}
+.campo-email p{
+    text-align: center;
+}
+.button{
+    width: 187px;
+    height: 40px;
+    border:1px solid #C20000;
+    border-radius:4px;
+    font-size:18px;
+    padding:6px 10px;
+    text-decoration:none;
+    background-color: #C20000;
+    margin-top: 15px;
+}
+
 @media screen and (max-width: 47.93em){
 
 }
