@@ -112,7 +112,6 @@ img{
 .jogos{
     width: 100%;
     height: 7.5em;
-    background-color: burlywood;
     color: white;
 }
 .jogos ul{
@@ -188,7 +187,7 @@ img{
 .partida img{
     max-width: 1.8em; /*54px*/
 }
-.time1, .time2{
+.time1, .time2{ /*Faz mudanças nas duas classes*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,11 +199,68 @@ img{
 .time2 img{
     margin-right: 0.5em;
 }
-
-@media screen and (max-width: 74.93em){
-
+.noticias-jogos{
+    width: 100%;
+    height: 55.125em;
+    background-color: #232126;
 }
-
+.noticias{
+    width: 78%;
+    height: 49em;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+.noticias h2{
+    font-size: 2.18em;
+}
+.card-noticia{
+    width: 14.8125em;
+    height: 22.5em;
+    background: linear-gradient(180deg, #232126 54.51%, rgba(255, 255, 255, 0) 100%), #000000;
+    box-shadow: 10px 10px 5px #000;
+}
+.card-noticia h3{
+    margin-left: 0.9375em;
+}
+.card-noticia p{
+    margin-left: 0.9375em;
+}
+.proximos-jogos{
+    width: 237px;
+    height: 750px;
+    background: linear-gradient(180deg, #232126 54.51%, rgba(255, 255, 255, 0) 100%), #000000;
+    box-shadow: 10px 10px 5px #000;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.jogos-futuros{
+    width: 221px;
+    height: 78px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.jogos-futuros p{
+    margin: auto;
+    color: #fff;
+}
+.rodape{
+    width: 100%;
+    height: 13.125em;
+    color: #fff;
+    display: flex;
+}
+.links-uteis ul{
+    list-style-type: none;
+}
+.links-uteis a{
+    text-decoration: none;
+    color: #fff;
+}
 @media screen and (max-width: 47.93em){
 
 }
