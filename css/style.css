@@ -169,14 +169,17 @@ img{
 .jogos-aovivo, .jogos-embreve{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 1.875em;/*30px*/
+    font-size: 1.575em;/*25,12px*/
 }
-.jogos-aovivo::after{
-    content: '';
-    height: 2.666em;
-    border: solid 1px #fff;
-    margin: 0 1em;
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
+.linha{
+    height: 3em;
+    border:solid 1px #fff;
+}
+
 .partida{
     width: 9.5em;
     display: flex;
@@ -199,33 +202,37 @@ img{
 .time2 img{
     margin-right: 0.5em;
 }
-.noticias-jogos{
+.bg-noticias{
     width: 100%;
-    height: 55.125em;
+    height: auto;
     background-color: #232126;
 }
 .noticias{
-    width: 78%;
-    height: 49em;
-    color: white;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    width: 100%;
+    height: 55.125em;
 }
-.noticias h2{
+.wrap{
+    flex-wrap: wrap;
+}
+.noticias h2 , .proximos-jogos h2{
     font-size: 2.18em;
+    color: #fff;
 }
 .card-noticia{
     width: 14.8125em;
     height: 22.5em;
     background: linear-gradient(180deg, #232126 54.51%, rgba(255, 255, 255, 0) 100%), #000000;
     box-shadow: 10px 10px 5px #000;
+    color: #fff;
 }
 .card-noticia h3{
     margin-left: 0.9375em;
 }
 .card-noticia p{
     margin-left: 0.9375em;
+}
+aside h2{
+    color: #fff;
 }
 .proximos-jogos{
     width: 14.8125em;
