@@ -280,34 +280,40 @@ img{
     max-width: 286px;
     justify-content: center;
 }
+.sociais{
+    width: 33%;
+}
 .newsletter{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.campo-email{
-    width: 187px;
-    height: 40px;
-    color: rgba(88, 83, 83, 0.589);
-    background-color: #fff;
-    border-radius:4px;
+.newsletter h2{
+    font-size: 0.875em;
+    margin-bottom: 1em;
 }
-.campo-email p{
-    text-align: center;
+.newsletter form{
+    display: flex;
 }
-.button{
-    width: 187px;
-    height: 40px;
-    border:1px solid #C20000;
-    border-radius:4px;
-    font-size:18px;
-    padding:6px 10px;
-    text-decoration:none;
-    background-color: #C20000;
-    margin-top: 15px;
+.newsletter input[type= "email"]{
+    width: 12.5em;
+    height: 2.5em;
+    font-size: 1.1em;
+    padding-left: 1em;
 }
-
+.newsletter input[type="email"]::placeholder{
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+}
+.newsletter input[type="submit"]{
+    width: 9.75em;
+    height: 2.5em;
+    font-size: 1.1em;
+    background-color: #8326EF;
+    color: #fff;
+}
+.siga-nos{
+    margin-top: 1em;
+}
 @media screen and (max-width: 47.93em){
 
 }
