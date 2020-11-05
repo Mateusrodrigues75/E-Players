@@ -16,10 +16,10 @@
                 <img src="img/Logo.svg" alt="Logo E-Players">
             </a>
             <nav class="menu">
-                <a href="#" id="menu-bars">
+                <a href="#" id="menu-bars" onclick="meuMenu()">
                     <i class="fas fa-bars"></i>
                 </a>
-                <ul>
+                <ul id="meusLinks">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
@@ -287,7 +287,7 @@
     </footer>
     <script>
         function meuMenu(){
-            var ulDoMenu = document.getElementById("menu-bars");
+            var ulDoMenu = document.getElementById("meusLinks");
             if(ulDoMenu.style.display === "flex"){
                 ulDoMenu.style.display = "none"
             } else{

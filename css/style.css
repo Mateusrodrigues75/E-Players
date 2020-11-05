@@ -314,6 +314,34 @@ img{
 .siga-nos{
     margin-top: 1em;
 }
+/*1280px*/
+@media screen and (max-width:80em){
+    .topo img {
+        max-width: 13.18em;
+    }
+    .menu a{
+        font-size: 1em;
+        padding: 2em 0.8em;
+    }
+    .banner-text h1 {
+        font-size: 4.62em;
+    }
+    .banner-text p {
+        font-size: 1.5em;
+    }
+    .banner-text a {
+        font-size: 1.5em;
+    }
+    .about-position img {
+        max-width: 27.87em;
+    }
+    .fundo-noticias{
+        height: auto;
+    }
+    .card-noticia{
+        margin-right: 2px;
+    }
+}
 /*1200px*/
 @media screen and (max-width: 75em){
     .menu a {
@@ -411,7 +439,7 @@ img{
    }
     .menu ul {
         z-index: 99;
-        display: flex;
+        display: none;
         width: 100%;
         max-width: 100%;
         height: 350px;
@@ -430,8 +458,60 @@ img{
         display: block;
         margin-left: auto;
    }
+   .about-text p {
+    font-size: 0.85em;
+   }
+   .about-text h2 {
+    font-size: 1.5em;
+    }
+    .about-position img {
+        max-width: 16.87em;
+    }
+    .jogos-aovivo, .jogos-embreve {
+        font-size: 0.9em;
+    }
+    .noticias h2, aside > h2 {
+        font-size: 1.5em;
+    }
+    .card-noticia{
+        width: 10.813em;
+        height: 18.8em;
+    }
+    .card-noticia p{
+        font-size: 13px;
+    }
+    .proximos-jogos {
+        width: 11.5em;
+    }
+    .links-uteis h2, .paginas h2 {
+        font-size: 0.89em;
+    }
+    .rodape a {
+        font-size: 0.7em;
+    }
+    .conteudo-rodape img {
+        max-width: 9.5em;
+    }
+    .newsletter h2 {
+        font-size: 0.7em;
+    }
+    .newsletter input[type="email"] {
+        width: 5.8em;
+    }
+    .newsletter input[type="submit"] {
+        height: 2.5em;
+    }
+    .siga-nos h2 {
+        font-size: 1em;
+    }
+    .newsletter input[type="email"]::placeholder{
+        font-size: 0.75em;
+    }
+    .newsletter input[type="submit"]{
+        font-size: 0.9em;
+    }
 }
-/* Até 575px */
-@media screen and (max-width: 35.9375em){
+/* Até 576px */
+@media screen and (max-width: 36em){
    
 }
