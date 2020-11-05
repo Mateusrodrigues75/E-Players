@@ -377,6 +377,9 @@ img{
     .jogos-aovivo, .jogos-embreve {
         font-size: 1.1em;
     }
+    .noticias {
+        width: 65%;
+    }
     .noticias h2, aside > h2 {
         font-size: 2em;
     }
@@ -403,7 +406,10 @@ img{
 }
 /*768px*/
 @media screen and (max-width: 48em){
-   .menu ul {
+   .menu{
+       display: flex;
+   }
+    .menu ul {
         z-index: 99;
         display: flex;
         width: 100%;
@@ -412,16 +418,17 @@ img{
         flex-direction: column;
         position: absolute;
         background-color: #000;
-        top:60px;
+        top:80px;
         left: 0;
         justify-content: space-around;
    }
-   .menu>a{
-       padding: 0;
+   .menu a{
+    padding: 0.9em 0.8em;
    }
+
    #menu-bars{
-    right: 0;
-       display: block;
+        display: block;
+        margin-left: auto;
    }
 }
 /* Até 575px */
