@@ -513,5 +513,37 @@ img{
 }
 /* Até 576px */
 @media screen and (max-width: 36em){
-   
+    .banner-text h1 {
+        font-size: 1.85em;
+    }
+    .banner-text p, .banner-text a {
+        font-size: 0.9em;
+    }
+    .about-text h2 {
+        font-size: 1.3em;
+    }
+    .about-text p {
+        font-size: 0.7em;
+    }
+    .about-position img {
+        max-width: 13.87em;
+    }
+    .jogos-aovivo, .jogos-embreve {
+        margin: auto;
+        flex-direction: column;
+    }
+    aside{
+        width: 50%;
+    }
+    .proximos-jogos {
+        width: 10.5em;
+    }
+    .flex-center-bt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .conteudo-rodape img {
+        max-width: 6.5em;
+    }
 }
