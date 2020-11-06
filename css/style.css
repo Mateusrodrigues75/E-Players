@@ -384,6 +384,9 @@ img{
 }
 /*992px*/
 @media screen and (max-width: 62em){
+    .desktop-only{
+        display: none;
+    }
     .banner-text h1 {
         font-size: 2.85em;
     }
@@ -430,11 +433,20 @@ img{
     .siga-nos h2{
         font-size: 1.25em;
     }
+    .fundo-noticias .flex-center-bt{
+        flex-direction: column;
+    }
 
 }
 /*768px*/
 @media screen and (max-width: 48em){
-   .menu{
+   .desktop-only{
+       display: none;
+   }
+   .mobile-only{
+       display: block;
+   }
+    .menu{
        display: flex;
    }
     .menu ul {
@@ -470,8 +482,12 @@ img{
     .jogos-aovivo, .jogos-embreve {
         font-size: 0.9em;
     }
+    .jogos-aovivo h2, .jogos-embreve h2{
+        text-align: center;
+    }
     .noticias h2, aside > h2 {
         font-size: 1.5em;
+        text-align: center;
     }
     .card-noticia{
         width: 10.813em;
@@ -482,6 +498,7 @@ img{
     }
     .proximos-jogos {
         width: 11.5em;
+        margin-bottom: 15px;
     }
     .links-uteis h2, .paginas h2 {
         font-size: 0.89em;
@@ -490,25 +507,19 @@ img{
         font-size: 0.7em;
     }
     .conteudo-rodape img {
-        max-width: 9.5em;
+        max-width: 6.5em;
+        margin-left: 100px;
     }
-    .newsletter h2 {
-        font-size: 0.7em;
+    .conteudo-rodape{
+        justify-content: flex-end;
     }
-    .newsletter input[type="email"] {
-        width: 5.8em;
+    .links-uteis{
+        width: 8.5em;
     }
-    .newsletter input[type="submit"] {
-        height: 2.5em;
-    }
-    .siga-nos h2 {
-        font-size: 1em;
-    }
-    .newsletter input[type="email"]::placeholder{
-        font-size: 0.75em;
-    }
-    .newsletter input[type="submit"]{
-        font-size: 0.9em;
+    .copyright p{
+        display: flex;
+        font-size: 0.8em;
+        align-items: flex-end;
     }
 }
 /* Até 576px */
@@ -536,14 +547,18 @@ img{
         width: 50%;
     }
     .proximos-jogos {
-        width: 10.5em;
+        width: 14.5em;
     }
-    .flex-center-bt {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .fundo-noticias .flex-center-bt{
+        flex-direction: column;
     }
-    .conteudo-rodape img {
-        max-width: 6.5em;
+
+}
+@media screen and (max-width: 470px){
+    /* .about-position .flex-center-bt{
+        flex-direction: column;
+    } */
+    .banner-text p, .banner-text a {
+        text-align: center;
     }
 }
