@@ -314,6 +314,9 @@ img{
 .siga-nos{
     margin-top: 1em;
 }
+.mobile-only{
+    display: none;
+}
 /*1280px*/
 @media screen and (max-width:80em){
     .topo img {
@@ -387,6 +390,33 @@ img{
     .desktop-only{
         display: none;
     }
+    .mobile-only{
+        display: block;
+    }
+    .menu{
+        display: flex;
+    }
+     .menu ul {
+        z-index: 99;
+        display: none;
+        width: 100%;
+        max-width: 100%;
+        height: 350px;
+        flex-direction: column;
+        position: absolute;
+        background-color: #000;
+        top:80px;
+        left: 0;
+        justify-content: space-around;
+    }
+    .menu a{
+     padding: 0.9em 0.8em;
+    }
+ 
+    #menu-bars{
+        display: block;
+        margin-left: auto;
+    }
     .banner-text h1 {
         font-size: 2.85em;
     }
@@ -413,9 +443,11 @@ img{
     }
     .noticias h2, aside > h2 {
         font-size: 2em;
+        text-align: center;
     }
     .proximos-jogos {
         width: 14.5em;
+        margin-bottom: 15px;
     }
     .links-uteis h2, .paginas h2{
         font-size: 1em;
@@ -426,15 +458,12 @@ img{
     .conteudo-rodape img{
         max-width: 12.5em;
     }
-    .newsletter input[type="email"], .newsletter input[type="submit"] {
-        width: 9.5em;
-        height: 2em;
+    .copyright{
+        display: flex;
+        justify-content: flex-end;
     }
-    .siga-nos h2{
-        font-size: 1.25em;
-    }
-    .fundo-noticias .flex-center-bt{
-        flex-direction: column;
+    .copyright p{
+        max-width: 40%;
     }
 
 }
@@ -442,33 +471,6 @@ img{
 @media screen and (max-width: 48em){
    .desktop-only{
        display: none;
-   }
-   .mobile-only{
-       display: block;
-   }
-    .menu{
-       display: flex;
-   }
-    .menu ul {
-        z-index: 99;
-        display: none;
-        width: 100%;
-        max-width: 100%;
-        height: 350px;
-        flex-direction: column;
-        position: absolute;
-        background-color: #000;
-        top:80px;
-        left: 0;
-        justify-content: space-around;
-   }
-   .menu a{
-    padding: 0.9em 0.8em;
-   }
-
-   #menu-bars{
-        display: block;
-        margin-left: auto;
    }
    .about-text p {
     font-size: 0.85em;
