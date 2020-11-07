@@ -445,6 +445,13 @@ img{
         font-size: 2em;
         text-align: center;
     }
+    .card-noticia{
+        width: 10.813em;
+        height: 18.8em;
+    }
+    .card-noticia p{
+        font-size: 13px;
+    }
     .proximos-jogos {
         width: 14.5em;
         margin-bottom: 15px;
@@ -457,6 +464,7 @@ img{
     }
     .conteudo-rodape img{
         max-width: 12.5em;
+        margin-left: 8.8125em;
     }
     .copyright{
         display: flex;
@@ -491,13 +499,7 @@ img{
         font-size: 1.5em;
         text-align: center;
     }
-    .card-noticia{
-        width: 10.813em;
-        height: 18.8em;
-    }
-    .card-noticia p{
-        font-size: 13px;
-    }
+    
     .proximos-jogos {
         width: 11.5em;
         margin-bottom: 15px;
@@ -522,6 +524,8 @@ img{
         display: flex;
         font-size: 0.8em;
         align-items: flex-end;
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
 /* Até 576px */
@@ -553,14 +557,44 @@ img{
     }
     .fundo-noticias .flex-center-bt{
         flex-direction: column;
+        width: 100%;
+    }
+}
+/* Até 470px */
+@media screen and (max-width: 29.375em){
+    .hide-mobile{
+        display: none;
+    }
+    .conteudo-rodape img {
+        margin-left: 40px;
+    }
+    .banner-text p, .banner-text a {
+        text-align: center;
+    }
+    .about-text{
+        width: 100%;
+    }
+    .links-uteis{
+        font-size: 13px;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+}
+/*Até 414px*/
+@media screen and (max-width: 25.875em){
+    .banner-text h1 {
+        font-size: 1.5em;
+    }
+    .jogos li{
+        width: 60%;
     }
 
 }
-@media screen and (max-width: 470px){
-    /* .about-position .flex-center-bt{
-        flex-direction: column;
-    } */
-    .banner-text p, .banner-text a {
-        text-align: center;
+/*Até 375px*/
+@media screen and (max-width: 23.4375em){
+    .proximos-jogos {
+        width: 12.5em;
+        margin-right: 15px;
     }
 }
